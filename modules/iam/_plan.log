@@ -1,0 +1,75 @@
+> terraform plan
+
+
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # module.project-iam-bindings.google_project_iam_binding.project_iam_authoritative["default--roles/admin"] will be created
+  + resource "google_project_iam_binding" "project_iam_authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "user:user01@sample.com",
+        ]
+      + project = "xxx"
+      + role    = "roles/admin"
+    }
+
+  # module.project-iam-bindings.google_project_iam_binding.project_iam_authoritative["default--roles/admin--"] will be created
+  + resource "google_project_iam_binding" "project_iam_authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:group04@sample.com",
+          + "user:user04@sample.com",
+        ]
+      + project = "xxx"
+      + role    = "roles/admin"
+    }
+
+  # module.project-iam-bindings.google_project_iam_binding.project_iam_authoritative["default--roles/editor"] will be created
+  + resource "google_project_iam_binding" "project_iam_authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:group02@sample.com",
+          + "serviceAccount:sv-account02@sample.iam.gserviceaccount.com",
+          + "user:user02@sample.com",
+        ]
+      + project = "xxx"
+      + role    = "roles/editor"
+    }
+
+  # module.project-iam-bindings.google_project_iam_binding.project_iam_authoritative["default--roles/editor--"] will be created
+  + resource "google_project_iam_binding" "project_iam_authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:group05@sample.com",
+          + "user:user05@sample.com",
+        ]
+      + project = "xxx"
+      + role    = "roles/editor"
+    }
+
+  # module.project-iam-bindings.google_project_iam_binding.project_iam_authoritative["default--roles/reader"] will be created
+  + resource "google_project_iam_binding" "project_iam_authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:group03@sample.com",
+          + "serviceAccount:sv-account03@sample.iam.gserviceaccount.com",
+          + "user:user03@sample.com",
+        ]
+      + project = "xxx"
+      + role    = "roles/reader"
+    }
+
+Plan: 5 to add, 0 to change, 0 to destroy.
+
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.

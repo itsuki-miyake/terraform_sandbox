@@ -1,5 +1,5 @@
 variable "project_id" { type = string }
-variable "region"     { type = string }
+variable "gcp_region" { type = string }
 
 variable "simple_bindings" {
   type = map(list(string))

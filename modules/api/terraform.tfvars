@@ -1,8 +1,9 @@
-# organization_id = ""
+organization_id = ""
 # folder_id       = ""
 project_name    = "plan-test-project"
 project_id      = "plan-test-project"
-# billing_account = ""
+billing_account = ""
+gcp_region      = "asia-northeast1"
 
 # usage_bucket_name    = ""
 # usage_bucket_prefix  = ""
